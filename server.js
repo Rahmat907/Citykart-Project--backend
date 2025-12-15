@@ -27,7 +27,7 @@ const port = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: true,
+    origin: 'https://citykart-frontend.vercel.app',
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type", // josn type main bhejeyga 
