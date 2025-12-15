@@ -40,14 +40,14 @@ app.use(
   })
 );
 
-app.get('/', (req, res)=>{
-  res.status(200).json({
-    success: true,
-    project : "Citykart API",
-    developer : "Rahmat77",
-    status : "Running"
-  })
-})
+// app.get('/', (req, res)=>{
+//   res.status(200).json({
+//     success: true,
+//     project : "Citykart API",
+//     developer : "Rahmat77",
+//     status : "Running"
+//   })
+// })
 app.use(cookieParser()); // middleware
 app.use(express.json());
 app.use('/api/auth', authRouter)        //controller ne diya route ko route ne diya server ko
