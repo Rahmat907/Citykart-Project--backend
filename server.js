@@ -27,7 +27,7 @@ const port = process.env.PORT || 5000;
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "https://citykart-frontend.vercel.app",
     methods: ["GET", "POST", "DELETE", "PUT"],
     allowedHeaders: [
       "Content-Type", // josn type main bhejeyga 
@@ -44,7 +44,7 @@ app.get('/', (req, res)=>{
   res.status(200).json({
     success: true,
     project : "Citykart API",
-    developer : "Rahmat",
+    developer : "Rahmat77",
     status : "Running"
   })
 })
