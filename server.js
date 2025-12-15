@@ -17,7 +17,7 @@ const shopaskAiRouter = require('./routes/shop-view/ai.route.js')
 
 
 mongoose
-  .connect(`mongodb+srv://rahmatkingkhan4_db_user:${process.env.MONGODB_PASSWORD}@citykartproject.tldv2kq.mongodb.net/`)
+  .connect(process.env.MONGODB_URL)
   .then(() => console.log("mongo db connect"))
   .catch((error) => console.log(error));
 
