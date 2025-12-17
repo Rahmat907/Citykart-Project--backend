@@ -56,15 +56,9 @@ User question: ${question}`
 
     const reply = ai.choices[0].message.content;
 
-    // 4. (Optional) Save to DB
-    // const askAIEntry = new AskAI({
-    //   productId,
-    //   question,
-    //   answer: reply,
-    // });
-    // await askAIEntry.save();
 
-    // 5. Response
+
+    // 4. Response
     return res.status(200).json({
       success: true,
       reply: reply,
