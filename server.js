@@ -43,10 +43,6 @@ app.use(
 
 app.use(cookieParser()); // middleware
 app.use(express.json());
-app.get('/ip', (req, res)=>{
-  res.json({ip: req.ip, headers : req.headers})
-  
-})
 app.use('/api/auth', authRouter)        //controller ne diya route ko route ne diya server ko
 app.use('/api/admin/products', adminProductsRouter);
 app.use('/api/admin/orders', adminOrdersRouter);
