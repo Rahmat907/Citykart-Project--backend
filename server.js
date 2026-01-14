@@ -2,7 +2,6 @@ const dotenv = require('dotenv')
 dotenv.config()
 const express = require("express");
 const mongoose = require("mongoose");
-// const cookieParser = require('cookie-parser')
 const cors = require("cors"); // ek ke sath proxy bhi atta hai jo direct kar deyta hai fronted server to server
 const cookieParser = require("cookie-parser");
 const authRouter = require('./routes/auth/auth.route.js')
