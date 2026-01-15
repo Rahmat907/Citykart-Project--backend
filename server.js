@@ -2,7 +2,7 @@ const dotenv = require('dotenv')
 dotenv.config()
 const express = require("express");
 const mongoose = require("mongoose");
-const cors = require("cors"); // ek ke sath proxy bhi atta hai jo direct kar deyta hai fronted server to server
+const cors = require("cors");
 const cookieParser = require("cookie-parser");
 const authRouter = require('./routes/auth/auth.route.js')
 const adminProductsRouter= require('./routes/admin/products.routes.js')
