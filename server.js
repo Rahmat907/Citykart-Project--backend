@@ -41,7 +41,7 @@ app.use(
 
 
 app.use(cookieParser()); // middleware
-app.use(express.json());
+app.use(express.json()); // data only json valid hai 
 app.use('/api/auth', authRouter)        //controller ne diya route ko route ne diya server ko
 app.use('/api/admin/products', adminProductsRouter);
 app.use('/api/admin/orders', adminOrdersRouter);
